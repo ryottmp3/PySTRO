@@ -222,8 +222,8 @@ class MCBViewBox(pg.ViewBox):
             ev.ignore()
 
 class MCBROI(pg.ROI):
-    sigMark = QtCore.Signal(object)
-    sigClear = QtCore.Signal(object)
+    sigMark = QtCore.pyqtSignal(object)
+    sigClear = QtCore.pyqtSignal(object)
 
     def __init__(self, **kwargs):
         super().__init__(pos=(0,0), **kwargs)
